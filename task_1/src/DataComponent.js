@@ -3,6 +3,11 @@ import "./App.css";
 import TableHeaders from "./TableHeaders";
 import TableContent from "./TableContent";
 
+
+import '../Distribution/index.css'
+import Accordion from "./accordion";
+import { accordionData } from '../Util/content';
+
 const DataComponent = ({ tableData }) => {
   const [tableHeaders, setTableHeaders] = useState([]);
 
@@ -35,7 +40,7 @@ const DataComponent = ({ tableData }) => {
         <br />
       </div>
 
-      <div className="content">
+      {/* <div className="content">
         <button className="business_button">IMT</button>
         <button className="accordion_button">-</button>
         <div className="data_table">
@@ -46,7 +51,17 @@ const DataComponent = ({ tableData }) => {
         <div className="line"></div>
         </div>
         <div className="side_content">side content</div>
-      </div>
+      </div> */}
+
+
+<div className="accordion-section">
+                <div className="accordion">
+                    {accordionData.map(({ title, content }) => (
+                        <Accordion title={title} tableData={content}/>
+                    ))}
+                </div>
+            </div>
+
     </div>
   );
 };

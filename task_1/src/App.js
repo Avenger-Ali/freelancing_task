@@ -6,7 +6,7 @@ function App() {
   console.log("tableData",tableData);
   
   return (
-    <DataComponent tableData={tableData} />
+    <DataComponent/>
   );
 }
 
