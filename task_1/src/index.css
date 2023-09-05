@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  display: flex;
+  margin: auto;
+  width: 95%;
+}
+
+.business{
+  height: 25px;
+  border-radius: 5px;
+  margin:15px;
+}
+
+.content{
+  height:450px;
+  margin: auto;
+  width: 95%;
+  border-radius: 15px;
+  background-color: rgb(103, 4, 196);
+  border: 1px solid #4CAF50;
+
+}
+
+.business_button{
+  width:50px;
+  height:auto;
+  border-radius: 15px;
+  margin:10px;
+  float: left;
+  border: 1px solid white;
+  color: rgb(103, 4, 196);
+}
+
+.accordion_button {
+  float: right;
+  width: 20px;
+  height: auto;
+  border-radius: 5px;
+  background-color: rgb(103, 4, 196);
+  margin: 10px;
+  border: 1px solid white;
+  color: white;
+}
+
+table{
+  /* width:80%; */
+  text-align: center;
+}
+
+th{
+  white-space:pre-line;
+  word-break: break-all;
+  color:white;
+}
+
+td:first-child{
+  color: white;
+  text-align: end;
+}
+
+td:not(:first-of-type){
+  color: white;
+  background-color: blueviolet;
+}
+
+.data_input{
+  border-radius: 5px;
+  border: 1px solid white;
+  margin: 5px;
+  float:right;
+}
+
+.line{
+  border: 1px solid white;
+  width: 68%;
+  margin-left: 150px;
+  margin-top: 5px;
+}
+
+.data_table{
+  float:left;
+  width: 75%;
+  margin: 5px;
+  margin-top: 50px;
+}
+
+.side_content{
+  float: right;
+  margin-top: 50px;
+  border: 1px solid white;
+  height: 100%;
+  width: 14%;
+  margin-left: 11px;
+}
